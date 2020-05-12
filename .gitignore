@@ -1,0 +1,22 @@
+#Node
+node_modules
+
+#Store
+.DS_Store
+
+#Vscode
+.vscode
+
+#git repository
+.git
+
+#project directory
+build
+.env
+
+#caches
+package-lock.json
+yarn.lock
+
+#test coverage
+coverage
