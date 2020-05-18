@@ -23,3 +23,8 @@
 4. [TravisCI](https://travis-ci.org/) for continuous integration
 5. [JestJS](https://jestjs.io/docs/en/webpack) for testing
 6. [Enzyme](https://enzymejs.github.io/enzyme/docs/installation/) for DOM testing
+
+### D. Dependencies
+1. [node-sass](https://www.npmjs.com/package/node-sass)
+2. [sass](https://www.npmjs.com/package/sass)
+3. [sass-loader](https://www.npmjs.com/package/sass-loader)

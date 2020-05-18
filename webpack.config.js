@@ -26,8 +26,9 @@ module.exports = (env) => ({
         use: ['babel-loader'],
       },
       {
-        test: /\.css$/,
-        loader: ['style-loader', 'css-loader'],
+        test: /\.(scss|css)$/,
+        exclude: /node_modules/,
+        loader: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(png|jpg|svg|gif|jpeg)?$/,
