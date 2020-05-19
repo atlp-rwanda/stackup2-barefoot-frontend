@@ -3,6 +3,11 @@ language: node_js
 node_js:
   - stable
 
+addons:
+  code_climate:
+    repo_token:
+      secure: "qrkFKUR3hlStp1+/Bfs240zTra8S88MvTWT7XJ6II4tRyKFyWWut+ncdIJVj9dzE9jsKvxe1qQ/7UdszFPs7z6Jzv3CZ69xfjHZKfzcmKGSyQ3iUtNt4K1oxjmLyWuAkHTHGWaLimI/eyY426+ZpXHYS0KSdM/IOXNJd4wmD9TC81y3EBEFj8wzuH900BQHD4gb62GNKSx7mddygOGRz/EDikNc4YYWInYX+y608EHeHwsK6JsbmDaq+//1VeZepNVCQ/SMMyMEsu81fsD68QzQyFl9Qi2tCmcbPIX3MC3nkMLDEEjiMh8cap+5anKq3oBmuKZ11w7JZs2k7W00d5d4Kk5ASVuUQF+0SgDFGQ0KVuhQhJugH14XoXbGKcygJyFKtH/k/s73tlFYclar1K22/tb/MtLbE7qd3P6RsJvbS9jRt62fepEK/HpzZ7FeZQ5AcY3aV7SDjYekiBBUcOGSBY32+JOGfJ4PxiPElnYe0gkr3AHETHZxqa6OekIyOiF/qeFvUBG4ZFYN4FAIzoKHxLrFYzsSDsd01cnFRT4BLvvJ4tC/MWyp0Ng4XgRS0cphJ+5TymfpzltPBtQpTWFXQTiagzjgcJebBJN4xxo7pwJjcTw6aJ4KRc2LszhaRQPxEL2iv4KXDTLJ0H0EHP8wy/r66jmL3cBhO9LD050Y="
+
 install:
   - yarn
   
@@ -11,3 +16,6 @@ script:
  
 notification:
   - email: false
+
+after_success:
+  - yarn run coverage

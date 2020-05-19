@@ -1,6 +1,6 @@
 # stackup2-barefoot-frontend
 
-[![Build Status](https://travis-ci.org/Stackup-Rwanda/stackup2-barefoot-frontend.svg?branch=develop)](https://travis-ci.org/Stackup-Rwanda/stackup2-barefoot-frontend)
+[![Build Status](https://travis-ci.org/Stackup-Rwanda/stackup2-barefoot-frontend.svg?branch=develop)](https://travis-ci.org/Stackup-Rwanda/stackup2-barefoot-frontend)  [![Test Coverage](https://api.codeclimate.com/v1/badges/3b653dc153a951875992/test_coverage)](https://codeclimate.com/github/Stackup-Rwanda/stackup2-barefoot-frontend/test_coverage)  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/fe79265b9e524b9bb21f1204c2b1c46b)](https://www.codacy.com/gh/Stackup-Rwanda/stackup2-barefoot-frontend?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Stackup-Rwanda/stackup2-barefoot-frontend&amp;utm_campaign=Badge_Grade)
 
 ## To run it locally
 ### A. Pre-requisites: 
