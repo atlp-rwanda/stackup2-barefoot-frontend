@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import customMessage from '../utils/customMessages';
+import firstMessage from '../actions/actions';
 
 class HelloComponent extends Component {
   constructor() {
@@ -8,12 +11,33 @@ class HelloComponent extends Component {
   }
 
   render() {
+    const { message, displayMessage } = this.props;
+
     return (
-      <h1>
-        {customMessage.welcomeToBarefootNomad}
-      </h1>
+      <div>
+        <h1>
+          {customMessage.welcomeToBarefootNomad}
+        </h1>
+        <h2>{message}</h2>
+        <button type="button" onClick={displayMessage}>
+          try redux
+        </button>
+      </div>
     );
   }
 }
 
-export default HelloComponent;
+const mapStateToProps = (state) => ({
+  message: state.message,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  displayMessage: () => dispatch({ ...firstMessage, value: 'Redux is working !!!' }),
+});
+
+HelloComponent.propTypes = {
+  message: PropTypes.string.isRequired,
+  displayMessage: PropTypes.func.isRequired,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(HelloComponent);
