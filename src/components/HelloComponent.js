@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import customMessage from '../utils/customMessages';
 import firstMessage from '../actions/actions';
 
@@ -22,6 +23,10 @@ class HelloComponent extends Component {
         <button type="button" onClick={displayMessage}>
           try redux
         </button>
+        <ul>
+          <li><Link to="/login">Login</Link></li>
+        </ul>
+        <Link to="/signup">Signup</Link>
       </div>
     );
   }

@@ -4,6 +4,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
 import configureStore from 'redux-mock-store';
+import { BrowserRouter } from 'react-router-dom';
 import customMessage from '../utils/customMessages';
 import App from '../entry/App';
 import HelloComponent from '../components/HelloComponent';
@@ -20,7 +21,9 @@ const store = mockStore({
 store.dispatch = jest.fn();
 component = renderer.create(
   <Provider store={store}>
-    <HelloComponent />
+    <BrowserRouter>
+      <HelloComponent />
+    </BrowserRouter>
   </Provider>,
 );
 describe('App tests', () => {
@@ -30,8 +33,12 @@ describe('App tests', () => {
   });
 
   it('Will show the home page', () => {
-    const homePage = mount(<Provider store={store}><HelloComponent /></Provider>);
-    expect(homePage.text()).toEqual(`${customMessage.welcomeToBarefootNomad}Welcometry redux`);
+    const homePage = mount(
+      <Provider store={store}>
+        <BrowserRouter><HelloComponent /></BrowserRouter>
+      </Provider>,
+    );
+    expect(homePage.text()).toEqual(`${customMessage.welcomeToBarefootNomad}Welcometry reduxLoginSignup`);
   });
 
   it('Will show the front page', () => {
