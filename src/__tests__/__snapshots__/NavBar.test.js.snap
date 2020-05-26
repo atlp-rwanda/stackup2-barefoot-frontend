@@ -2,7 +2,7 @@
 
 exports[`<NavBar/> Should match the NavBar component snapshot 1`] = `
 <div
-  className="makeStyles-root-1"
+  className="jss1"
 >
   <header
     className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary navbar MuiPaper-elevation4"
@@ -31,6 +31,7 @@ exports[`<NavBar/> Should match the NavBar component snapshot 1`] = `
           className="MuiTypography-root MuiLink-root MuiLink-underlineHover navlink MuiTypography-colorPrimary"
           href="/login"
           onBlur={[Function]}
+          onClick={[Function]}
           onFocus={[Function]}
         >
           Login

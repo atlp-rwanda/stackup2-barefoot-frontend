@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`login actions Dispatches the correct action and payload 1`] = `Array []`;
+
+exports[`login actions Dispatches the correct action and payload of wrong email 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "error": "Invalid email",
+    },
+    "type": "LOGIN_HANDLE",
+  },
+]
+`;

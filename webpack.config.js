@@ -1,11 +1,14 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
+const Dotenv = require('dotenv-webpack');
 require('dotenv').config();
 
 module.exports = (env) => ({
   context: __dirname,
   entry: './src/entry/index.js',
+  target: 'web',
+  node: { fs: 'empty' },
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'barefoot-nomad-build.js',
@@ -23,7 +26,16 @@ module.exports = (env) => ({
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        loader: 'babel-loader',
+        options: {
+          presets: [
+            '@babel/preset-env',
+            '@babel/preset-react',
+          ],
+          plugins: [
+            '@babel/transform-runtime',
+          ],
+        },
       },
       {
         test: /\.(scss|css)$/,
@@ -45,6 +57,7 @@ module.exports = (env) => ({
       filename: '[name].css',
       chunkFilename: '[id].css',
     }),
+    new Dotenv(),
   ],
   performance: {
     hints: false,
