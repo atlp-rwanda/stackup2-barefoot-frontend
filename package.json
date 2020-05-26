@@ -11,6 +11,10 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
+  "engines": {
+    "yarn": "1.x",
+    "node": "14.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Stackup-Rwanda/stackup2-barefoot-frontend.git"
