@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/Stackup-Rwanda/stackup2-barefoot-frontend.svg?branch=develop)](https://travis-ci.org/Stackup-Rwanda/stackup2-barefoot-frontend)
 
 ## To run it locally
-### A.Pre-requisites : 
+### A. Pre-requisites: 
 * To be able to test this project locally, you need to have the following tools on your local machine:
 > * You need to have [NodeJS version between `6` higher](https://nodejs.org/en/) and [npm version `6` or higher](https://www.npmjs.com/) or [yarn v1.15.0 or higher](https://yarnpkg.com/getting-started/install)
 > * Your local machine needs to be able to run terminal, Powershell, or bash commands
@@ -28,3 +28,5 @@
 1. [node-sass](https://www.npmjs.com/package/node-sass)
 2. [sass](https://www.npmjs.com/package/sass)
 3. [sass-loader](https://www.npmjs.com/package/sass-loader)
+4. [Storybook](https://storybook.js.org/docs/guides/guide-react/)
+5. [Enzyme](https://enzymejs.github.io/enzyme/)

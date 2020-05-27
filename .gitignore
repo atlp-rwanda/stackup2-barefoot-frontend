@@ -17,6 +17,7 @@ build
 #caches
 package-lock.json
 yarn.lock
+yarn-error.log
 
 #test coverage
 coverage
