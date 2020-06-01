@@ -12,6 +12,10 @@
     "build-storybook": "build-storybook",
     "coverage": "codeclimate-test-reporter < ./coverage/lcov.info"
   },
+  "engines": {
+    "yarn": "1.x",
+    "node": "14.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Stackup-Rwanda/stackup2-barefoot-frontend.git"
