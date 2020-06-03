@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RequestsTable /> Should match the RequestsTable snapshot 1`] = `[Function]`;
+
+exports[`<RequestsTable /> Should match the RequestsTable snapshot when no requests 1`] = `[Function]`;

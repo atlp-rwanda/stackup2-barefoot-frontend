@@ -13,33 +13,39 @@ exports[`<NavBar/> Should match the NavBar component snapshot 1`] = `
       <div
         className="brand"
       >
-        <h2
-          className="brand-barefoot"
+        <a
+          className="brand-link"
+          href="/"
+          onClick={[Function]}
         >
-          Barefoot
-        </h2>
-        <h2
-          className="brand-nomad"
-        >
-          Nomad
-        </h2>
+          <span
+            className="brand-barefoot"
+          >
+            Barefoot
+          </span>
+          <span
+            className="brand-nomad"
+          >
+            Nomad
+          </span>
+        </a>
       </div>
       <div
         className="brand"
       >
         <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover navlink MuiTypography-colorPrimary"
-          href="/login"
-          onBlur={[Function]}
-          onFocus={[Function]}
+          className="navlink"
+          color="primary"
+          href="/"
+          onClick={[Function]}
         >
           Login
         </a>
         <a
-          className="MuiTypography-root MuiLink-root MuiLink-underlineHover navlink navlink-signup MuiTypography-colorTextPrimary"
-          href="/signup"
-          onBlur={[Function]}
-          onFocus={[Function]}
+          className="navlink navlink-signup"
+          color="textPrimary"
+          href="/dashboard/requests"
+          onClick={[Function]}
         >
           Create account
         </a>

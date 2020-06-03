@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TripRequests actions Dispatches the FETCH_TRIP_REQUESTS_FAILURE action 1`] = `
+Array [
+  Object {
+    "payload": undefined,
+    "type": "FETCH_TRIP_REQUESTS_FAILURE",
+  },
+]
+`;
+
+exports[`TripRequests actions Dispatches the FETCH_TRIP_REQUESTS_REQUEST action 1`] = `
+Array [
+  Object {
+    "type": "FETCH_TRIP_REQUESTS_REQUEST",
+  },
+]
+`;
+
+exports[`TripRequests actions Dispatches the FETCH_TRIP_REQUESTS_SUCCESS action 1`] = `
+Array [
+  Object {
+    "payload": undefined,
+    "type": "FETCH_TRIP_REQUESTS_SUCCESS",
+  },
+]
+`;

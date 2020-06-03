@@ -1,11 +1,11 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
-require('dotenv').config();
+const Dotenv = require('dotenv-webpack');
 
 module.exports = (env) => ({
   context: __dirname,
-  entry: './src/entry/index.js',
+  entry: ['./src/entry/index.js'],
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'barefoot-nomad-build.js',
@@ -14,7 +14,7 @@ module.exports = (env) => ({
   mode: env ? 'production' : 'development',
   devServer: {
     inline: true,
-    port: process.env.PORT,
+    port: process.env.REACT_APP_PORT,
     contentBase: path.join(__dirname, 'build'),
   },
 
@@ -23,15 +23,19 @@ module.exports = (env) => ({
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
       },
       {
         test: /\.(scss|css)$/,
-        exclude: /node_modules/,
         loader: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(png|jpg|svg|gif|jpeg)?$/,
+        test: /\.(png|jpg|svg|gif|jpeg|woff|woff2|eot|ttf|otf)?$/,
         use: ['file-loader'],
       },
     ],
@@ -45,6 +49,7 @@ module.exports = (env) => ({
       filename: '[name].css',
       chunkFilename: '[id].css',
     }),
+    new Dotenv(),
   ],
   performance: {
     hints: false,
