@@ -1,0 +1,376 @@
+$primary-dark: #00a799;
+$primary-main: #00a79980;
+$primary-light: #00a79926;
+$primary-lighter: #00a7990f;
+$secondary: #ff585b;
+$text: #474747;
+$background-light: #fff;
+
+*,
+a {
+  outline: none !important;
+}
+
+html,
+body,
+#root,
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: $primary-light;
+  color: $text;
+  margin: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif !important;
+}
+
+.navbar {
+  background-color: $primary-light !important;
+  box-shadow: none !important;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.brand-barefoot {
+  color: $secondary;
+}
+
+.navlink-signup {
+  margin-left: 16px !important;
+}
+
+.navlink {
+  color: $text !important;
+  text-transform: inherit !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+
+  &:hover {
+    font-weight: bold;
+    text-decoration: none !important;
+  }
+
+  &:focus {
+    font-weight: bold;
+    text-decoration: none !important;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.image {
+  background: url(../../images/landing_background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.description-wrapper {
+  background-color: $primary-main;
+  color: $background-light;
+  padding: 32px;
+  width: 30%;
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.description-text {
+  font-weight: 300;
+  font-size: 18pt;
+}
+
+.description-bar,
+.testimony-bar {
+  margin: 8px 0;
+}
+
+.cta-btn {
+  background-color: $secondary !important;
+  border-color: $secondary !important;
+  text-transform: capitalize !important;
+  color: $background-light !important;
+  padding: 12px 24px !important;
+  font-weight: lighter !important;
+}
+
+.testimonials {
+  padding: 24px 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-light;
+}
+
+.testimony-title,
+.testimony-bar {
+  text-align: center;
+}
+
+.testimony-title {
+  font-size: 22pt;
+  font-weight: bold;
+}
+
+.testimony-card {
+  background-color: $primary-lighter;
+}
+
+.testimony-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimony-reviewer {
+  background: url(../../images/reviewer.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 298px;
+  min-height: 485px;
+}
+
+.testimony-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 24px;
+}
+
+.testimony-text,
+.testimony-author {
+  font-weight: lighter;
+  width: 290px;
+}
+
+.testimony-text {
+  font-size: 14pt;
+}
+
+.testimony-author {
+  font-size: 10pt;
+}
+
+.cta-section {
+  background: url(../../images/ready_travel_background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-section-frame {
+  background-color: $primary-main;
+  color: $background-light;
+  padding: 48px 128px;
+}
+
+.mb24 {
+  margin-bottom: 24px;
+}
+
+.cta-section-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.services {
+  background-color: $background-light;
+  padding: 100px 0;
+}
+
+.services,
+.services-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-content {
+  width: 80%;
+  justify-content: space-evenly !important;
+}
+
+.card {
+  width: 240px;
+  height: 300px;
+  padding: 48px 24px;
+}
+
+.card-title {
+  font-size: 12pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70%;
+}
+
+.card-item {
+  font-size: 10pt;
+  font-weight: normal;
+  margin-bottom: 24px !important;
+  color: $text !important;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: $text !important;
+  }
+
+  &:focus {
+    text-decoration: none;
+    color: $text !important;
+  }
+}
+
+// Footer
+.footer {
+  background-color: $background-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20%;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 10pt;
+  font-weight: 300;
+  color: #bbb !important;
+}
+
+.rights {
+  margin: 5px !important;
+  color: #bbb !important;
+}
+
+@media (max-width: 575.98px) {
+  .description-wrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .testimony-title {
+    font-size: 20pt;
+  }
+
+  .testimony-item {
+    flex-direction: column;
+  }
+
+  .testimony-content {
+    flex-direction: column;
+    justify-content: center;
+    margin: 24px 0 24px 0;
+  }
+
+  .socials {
+    width: 50%;
+  }
+
+  .copyright {
+    flex-direction: column;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .cta-section-frame {
+    padding: 48px 64px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .description-wrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .testimony-title {
+    font-size: 20pt;
+  }
+
+  .testimony-item {
+    flex-direction: column;
+  }
+
+  .testimony-content {
+    flex-direction: column;
+    justify-content: center;
+    margin: 24px 0 24px 0;
+  }
+
+  .socials {
+    width: 50%;
+  }
+
+  .copyright {
+    flex-direction: column;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .cta-section-frame {
+    padding: 48px 64px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .description-wrapper {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .description-wrapper {
+    width: 50%;
+  }
+}

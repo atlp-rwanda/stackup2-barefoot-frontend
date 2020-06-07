@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavBar/> Should match the NavBar component snapshot 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <header
+    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary navbar MuiPaper-elevation4"
+  >
+    <div
+      className="MuiToolbar-root MuiToolbar-regular navbar-content MuiToolbar-gutters"
+    >
+      <div
+        className="brand"
+      >
+        <h2
+          className="brand-barefoot"
+        >
+          Barefoot
+        </h2>
+        <h2
+          className="brand-nomad"
+        >
+          Nomad
+        </h2>
+      </div>
+      <div
+        className="brand"
+      >
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover navlink MuiTypography-colorPrimary"
+          href="/login"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Login
+        </a>
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover navlink navlink-signup MuiTypography-colorTextPrimary"
+          href="/signup"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Create account
+        </a>
+      </div>
+    </div>
+  </header>
+</div>
+`;

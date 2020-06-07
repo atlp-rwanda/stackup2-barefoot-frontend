@@ -30,6 +30,7 @@
 3. [sass-loader](https://www.npmjs.com/package/sass-loader)
 4. [Storybook](https://storybook.js.org/docs/guides/guide-react/)
 5. [Enzyme](https://enzymejs.github.io/enzyme/)
+6. [Material-UI](https://material-ui.com/)
 
 ### E. Deployments
 - This application is deployed on heroku, we have two different versions, which are different by the app status, in staging mode or ready for production.
@@ -38,6 +39,3 @@
 
 - When the app is ready for production is available on this link `https://immense-chamber-27847.herokuapp.com/`
 - Whenever a new PR is opened, there is a new review app which is created and accessible in the browser which helps to access visualize your PR in the browser to check if it working as you wanted it to work.
-
-
-

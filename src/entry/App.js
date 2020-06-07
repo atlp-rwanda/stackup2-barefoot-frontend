@@ -1,24 +1,21 @@
 import React from 'react';
-import {
-  BrowserRouter as Router, Link, Route, Switch,
-} from 'react-router-dom';
-import './app.css';
-import HelloComponent from '../components/HelloComponent';
-import FrontPage from '../views/frontPage';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { ThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import theme from '../assets/styles/theme';
+import LandingPage from '../views/LandingPage/LandingPage';
+import NavBar from '../views/NavBar/NavBar';
 
 const App = () => (
-  <div>
+  <ThemeProvider theme={theme}>
+    <CssBaseline />
     <Router>
-      <ul>
-        <li><Link to="/login">Login</Link></li>
-      </ul>
+      <NavBar />
       <Switch>
-        <Route path="/" component={HelloComponent} exact />
-        <Route path="/login" component={FrontPage} />
+        <Route path="/" component={LandingPage} exact />
       </Switch>
     </Router>
-  </div>
-
+  </ThemeProvider>
 );
 
 export default App;
