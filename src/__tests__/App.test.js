@@ -2,13 +2,14 @@
 /* eslint-disable no-undef */
 import { mount, shallow } from 'enzyme';
 import React from 'react';
+import 'regenerator-runtime/runtime';
 import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
 import configureStore from 'redux-mock-store';
 import App from '../entry/App';
 import LandingPage from '../views/LandingPage/LandingPage';
-import reducer from '../reducers/reducer';
-import firstMessage from '../actions/actions';
+import reducer from '../redux/login/reducer';
+import firstMessage from '../redux/actions/actions';
 
 const mockStore = configureStore([]);
 const store = mockStore({
@@ -20,6 +21,12 @@ const component = renderer.create(
     <LandingPage />
   </Provider>,
 );
+const initialObj = {
+  errors: '',
+  message: 'Welcome',
+  success: false,
+  token: '',
+};
 describe('App tests', () => {
   it('Will prove that the app is rendered from App component', () => {
     const appRender = shallow(<App />);
@@ -27,7 +34,7 @@ describe('App tests', () => {
   });
 
   it('should return welcome when no action provided', () => {
-    expect(reducer(undefined, {})).toEqual({ message: 'Welcome' });
+    expect(reducer(undefined, {})).toEqual(initialObj);
   });
   it('should return Redux when action is provided with value', () => {
     expect(reducer(undefined, { ...firstMessage, value: 'Redux' })).toEqual({ message: 'Redux' });

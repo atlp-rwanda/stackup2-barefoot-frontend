@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -25,7 +26,7 @@ const NavBar = () => {
             <h2 className="brand-nomad">Nomad</h2>
           </div>
           <div className="brand">
-            <Link href="/login" color="primary" className="navlink">Login</Link>
+            <Link component={RouterLink} to="/login" color="primary" className="navlink">Login</Link>
             <Link href="/signup" color="textPrimary" className="navlink navlink-signup">Create account</Link>
           </div>
         </Toolbar>
