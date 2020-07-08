@@ -43,8 +43,26 @@ body {
   align-items: center;
 }
 
+.brand-link {
+  font-size: 18pt;
+  font-weight: 700;
+  text-decoration: none !important;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+
+  &:focus {
+    text-decoration: none !important;
+  }
+}
+
 .brand-barefoot {
   color: $secondary;
+}
+
+.brand-nomad {
+  color: $background-light;
 }
 
 .navlink-signup {
@@ -137,19 +155,39 @@ body {
 }
 
 .testimony-item {
-  display: flex;
+  display: flex !important;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
+.slick-arrow {
+  display: none !important;
+}
+
 .testimony-reviewer {
-  background: url(../../images/reviewer.svg);
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   background-size: cover;
   width: 298px;
   min-height: 485px;
+}
+
+.musk {
+  background: url(../../images/reviewer.svg);
+}
+
+.dorsey {
+  background: url(../../images/dorsey.svg);
+}
+
+.mastermind {
+  display: none;
+}
+
+.mastermind-content {
+  min-height: 485px;
+  justify-content: center !important;
 }
 
 .testimony-content {
@@ -167,6 +205,10 @@ body {
 
 .testimony-text {
   font-size: 14pt;
+}
+
+.testimony-description {
+  margin-left: 2px;
 }
 
 .testimony-author {
@@ -290,6 +332,19 @@ body {
 }
 
 @media (max-width: 575.98px) {
+  .brand-link {
+    font-size: 16pt;
+    font-weight: 700;
+    text-decoration: none !important;
+    &:hover {
+      text-decoration: none !important;
+    }
+  
+    &:focus {
+      text-decoration: none !important;
+    }
+  }
+
   .description-wrapper {
     width: 100%;
     margin-left: 0;
@@ -303,10 +358,22 @@ body {
     flex-direction: column;
   }
 
+  .slick-list {
+    padding: 0 !important;
+  }
+
+  .slick-active {
+    width: 360px !important;
+  }
+
   .testimony-content {
     flex-direction: column;
     justify-content: center;
     margin: 24px 0 24px 0;
+  }
+
+  .testimony-description {
+    font-size: 12pt;
   }
 
   .socials {

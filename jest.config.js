@@ -7,6 +7,7 @@ module.exports = {
     '!src/entry/server.js',
     '!src/utils/customMessages.js',
     '!webpack.config.js',
+    '!src/assets/**',
   ],
   coverageDirectory: 'coverage',
   coveragePathIgnorePatterns: ['/node_modules/', '/__tests__'],

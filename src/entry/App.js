@@ -5,6 +5,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../assets/styles/theme';
 import LandingPage from '../views/LandingPage/LandingPage';
 import NavBar from '../views/NavBar/NavBar';
+import RequestsTablePage from '../views/RequestsTablePage/RequestsTablePage';
 
 const App = () => (
   <ThemeProvider theme={theme}>
@@ -12,7 +13,8 @@ const App = () => (
     <Router>
       <NavBar />
       <Switch>
-        <Route path="/" component={LandingPage} exact />
+        <Route exact path="/" component={LandingPage} />
+        <Route path="/dashboard/requests" component={RequestsTablePage} />
       </Switch>
     </Router>
   </ThemeProvider>

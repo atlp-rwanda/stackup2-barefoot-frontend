@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SectionHeader/> Should match the SectionHeader component snapshot 1`] = `
+<p
+  className="MuiTypography-root makeStyles-title-1 MuiTypography-body1"
+>
+  Trip requests
+</p>
+`;
